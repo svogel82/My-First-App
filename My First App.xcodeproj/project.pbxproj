@@ -14,6 +14,7 @@
 		5113AD05213BEDB500AA90B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5113AD03213BEDB500AA90B3 /* LaunchScreen.storyboard */; };
 		5113AD10213BEDB600AA90B3 /* My_First_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5113AD0F213BEDB600AA90B3 /* My_First_AppTests.swift */; };
 		5113AD1B213BEDB600AA90B3 /* My_First_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5113AD1A213BEDB600AA90B3 /* My_First_AppUITests.swift */; };
+		5129A2B8213F22AB00C2E5FC /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5129A2B7213F22AB00C2E5FC /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5113AD16213BEDB600AA90B3 /* My First AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My First AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5113AD1A213BEDB600AA90B3 /* My_First_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_First_AppUITests.swift; sourceTree = "<group>"; };
 		5113AD1C213BEDB600AA90B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5129A2B7213F22AB00C2E5FC /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				5113AD01213BEDB500AA90B3 /* Assets.xcassets */,
 				5113AD03213BEDB500AA90B3 /* LaunchScreen.storyboard */,
 				5113AD06213BEDB600AA90B3 /* Info.plist */,
+				5129A2B7213F22AB00C2E5FC /* RoundedButton.swift */,
 			);
 			path = "My First App";
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5113ACFD213BEDB200AA90B3 /* ViewController.swift in Sources */,
+				5129A2B8213F22AB00C2E5FC /* RoundedButton.swift in Sources */,
 				5113ACFB213BEDB200AA90B3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
