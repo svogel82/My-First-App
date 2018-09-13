@@ -11,6 +11,12 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var stopwatchButtons: [RoundedButton]!
+    
+    
+    
+    
     
     var seconds = 0
     var running = false
@@ -18,6 +24,7 @@ class ViewController: UIViewController {
     
     let formatter = DateComponentsFormatter()
     
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +32,8 @@ class ViewController: UIViewController {
         formatter.allowedUnits = [.hour, .minute, .second]
         formatter.zeroFormattingBehavior = .pad
         updateTimeLabel()
+        
+        stopwatchButtons = stopwatchButtons.sorted {$0.tag < $1.tag}
     }
 
     func updateTimeLabel(){

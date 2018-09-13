@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,75 +17,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CSM-Xf-fHE">
+                                <rect key="frame" x="16" y="169.5" width="343" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQL-OQ-I9R" customClass="RoundedButton" customModule="My_First_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="65"/>
+                                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HGY-bM-5DS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyD-Db-11C" customClass="RoundedButton" customModule="My_First_App" customModuleProvider="target">
+                                        <rect key="frame" x="175.5" y="0.0" width="167.5" height="65"/>
+                                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Stop">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sof-Gp-eLK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="M9C-bh-Kda"/>
+                                </constraints>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZE-oT-IfH">
-                                <rect key="frame" x="16" y="167" width="343" height="333.5"/>
+                                <rect key="frame" x="16" y="28" width="343" height="133.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQL-OQ-I9R" customClass="RoundedButton" customModule="My_First_App" customModuleProvider="target">
-                                <rect key="frame" x="16" y="59" width="167.5" height="100"/>
-                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="36n-Rl-O2p"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Start">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HGY-bM-5DS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyD-Db-11C" customClass="RoundedButton" customModule="My_First_App" customModuleProvider="target">
-                                <rect key="frame" x="191.5" y="59" width="167.5" height="100"/>
-                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Rds-tq-AhY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Stop">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sof-Gp-eLK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9Y-lw-EfN" customClass="RoundedButton" customModule="My_First_App" customModuleProvider="target">
-                                <rect key="frame" x="16" y="508.5" width="343" height="100"/>
-                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="cWI-SK-DHn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Reset">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="20z-WD-NsK"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="65" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fkb-Ac-c4Y">
+                                <rect key="frame" x="16" y="242.5" width="343" height="416.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" red="0.0012180689955130219" green="0.32890725135803223" blue="0.57581102848052979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RoundTabelViewCell" id="RLH-38-omX">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RLH-38-omX" id="6VI-Qg-8rU">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="65"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xyD-Db-11C" firstAttribute="leading" secondItem="mQL-OQ-I9R" secondAttribute="trailing" constant="8" id="3EU-Hb-uup"/>
-                            <constraint firstItem="f9Y-lw-EfN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="DmH-Qw-fSw"/>
-                            <constraint firstItem="vZE-oT-IfH" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="GYs-1J-b1k"/>
-                            <constraint firstItem="xyD-Db-11C" firstAttribute="width" secondItem="mQL-OQ-I9R" secondAttribute="width" id="Lq9-XK-CHo"/>
-                            <constraint firstItem="vZE-oT-IfH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Whn-KE-tbN"/>
-                            <constraint firstItem="f9Y-lw-EfN" firstAttribute="top" secondItem="vZE-oT-IfH" secondAttribute="bottom" constant="8" id="aHj-hA-oGk"/>
-                            <constraint firstItem="mQL-OQ-I9R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dOJ-Z8-bxO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vZE-oT-IfH" secondAttribute="trailing" constant="16" id="ha6-Ft-PBu"/>
-                            <constraint firstItem="vZE-oT-IfH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hes-xI-gXT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xyD-Db-11C" secondAttribute="trailing" constant="16" id="jmi-i2-D0b"/>
-                            <constraint firstItem="vZE-oT-IfH" firstAttribute="top" secondItem="mQL-OQ-I9R" secondAttribute="bottom" constant="8" id="jzG-rU-1hq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f9Y-lw-EfN" secondAttribute="trailing" constant="16" id="twa-yL-Ym3"/>
-                            <constraint firstItem="vZE-oT-IfH" firstAttribute="top" secondItem="xyD-Db-11C" secondAttribute="bottom" constant="8" id="tzC-gU-sv2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CSM-Xf-fHE" secondAttribute="trailing" constant="16" id="6ka-SF-PQW"/>
+                            <constraint firstItem="CSM-Xf-fHE" firstAttribute="top" secondItem="vZE-oT-IfH" secondAttribute="bottom" constant="8" id="6xt-Wu-Kul"/>
+                            <constraint firstItem="vZE-oT-IfH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="D4H-CQ-AH7"/>
+                            <constraint firstItem="vZE-oT-IfH" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="QXa-H8-Kky"/>
+                            <constraint firstItem="CSM-Xf-fHE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Rpp-6J-yzw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vZE-oT-IfH" secondAttribute="trailing" constant="16" id="cuq-lF-nUp"/>
+                            <constraint firstItem="Fkb-Ac-c4Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gag-lD-IlL"/>
+                            <constraint firstItem="Fkb-Ac-c4Y" firstAttribute="top" secondItem="CSM-Xf-fHE" secondAttribute="bottom" constant="8" id="gc4-V0-FCp"/>
+                            <constraint firstItem="vZE-oT-IfH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ibK-u3-8IS"/>
+                            <constraint firstItem="vZE-oT-IfH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="jKO-Z1-AKA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fkb-Ac-c4Y" secondAttribute="trailing" constant="16" id="lRm-pI-yJz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fkb-Ac-c4Y" secondAttribute="bottom" constant="8" id="t2M-nQ-jbt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="Fkb-Ac-c4Y" id="wp9-uS-UPN"/>
                         <outlet property="timeLabel" destination="vZE-oT-IfH" id="CSa-LY-XhC"/>
+                        <outletCollection property="stopwatchButtons" destination="mQL-OQ-I9R" collectionClass="NSMutableArray" id="AZp-Y5-ccZ"/>
+                        <outletCollection property="stopwatchButtons" destination="xyD-Db-11C" collectionClass="NSMutableArray" id="kQf-NN-c5n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
